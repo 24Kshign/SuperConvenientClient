@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/fr_include"
+        layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/fr_lv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fr_include"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/typeRecyclerView"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+            android:id="@+id/itemListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff" />
+    </LinearLayout>
+
+</RelativeLayout>

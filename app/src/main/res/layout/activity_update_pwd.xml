@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/height20"
+        android:layout_marginRight="@dimen/height20"
+        android:layout_marginTop="@dimen/height75"
+        android:background="@drawable/line_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/height25">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/height25"
+            android:paddingLeft="@dimen/height20"
+            android:paddingRight="@dimen/height20">
+
+            <ImageView
+                android:id="@+id/aup_iv_old_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@mipmap/icon_pwd" />
+
+            <View
+                style="@style/line"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/aup_iv_old_pwd" />
+
+            <EditText
+                android:id="@+id/aup_et_old_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/aup_iv_old_pwd"
+                android:background="@null"
+                android:gravity="bottom"
+                android:hint="请输入旧密码"
+                android:inputType="textPassword"
+                android:paddingBottom="@dimen/height8"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/height25"
+            android:paddingLeft="@dimen/height20"
+            android:paddingRight="@dimen/height20">
+
+            <ImageView
+                android:id="@+id/aup_iv_new_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@mipmap/icon_pwd" />
+
+            <View
+                style="@style/line"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/aup_iv_new_pwd" />
+
+            <EditText
+                android:id="@+id/aup_et_new_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/aup_iv_new_pwd"
+                android:background="@null"
+                android:gravity="bottom"
+                android:hint="请输入新密码"
+                android:inputType="textPassword"
+                android:paddingBottom="@dimen/height8"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/height20"
+        android:layout_marginTop="@dimen/height20"
+        android:src="@mipmap/ic_launcher" />
+
+    <View style="@style/thick_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height75"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/fm_rv_integral"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+            <ImageView
+                android:id="@+id/fm_iv_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_integral" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height5"
+                android:layout_toRightOf="@+id/fm_iv_integral"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="55555" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height5"
+                android:layout_toLeftOf="@+id/fm_iv_integral"
+                android:text="积分"
+                android:textColor="#9f9898"
+                android:textSize="@dimen/text_size_large" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/vertical_line"
+            android:layout_marginBottom="@dimen/height10"
+            android:layout_marginTop="@dimen/height10" />
+
+        <LinearLayout
+            android:id="@+id/fm_lv_coupon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height5"
+                android:text="优惠券"
+                android:textColor="#9f9898"
+                android:textSize="@dimen/text_size_large" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_coupon" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/vertical_line"
+            android:layout_marginBottom="@dimen/height10"
+            android:layout_marginTop="@dimen/height10" />
+
+        <LinearLayout
+            android:id="@+id/fm_lv_cheap_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height5"
+                android:text="积分"
+                android:textColor="#9f9898"
+                android:textSize="@dimen/text_size_large" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_cheap_price" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/thick_line" />
+
+</LinearLayout>

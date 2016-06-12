@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <TextView
+        android:id="@+id/as_tv_update_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height48"
+        android:background="@drawable/rv_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/height25"
+        android:text="修改密码"
+        android:textSize="@dimen/text_size_big" />
+
+    <View style="@style/thick_line" />
+
+    <Button
+        android:id="@+id/as_btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height45"
+        android:layout_marginLeft="@dimen/height10"
+        android:layout_marginRight="@dimen/height10"
+        android:layout_marginTop="@dimen/height30"
+        android:background="@drawable/exit_bg"
+        android:text="退出登录"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_large" />
+
+</LinearLayout>
